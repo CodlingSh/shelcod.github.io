@@ -6,35 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheldon Codling's Webpage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <link rel="stylesheet" href="css/sheldon.css">
+    <link rel="stylesheet" href="css/sheldontest.css">
     <script src="scripts/sidenav.js"></script>
+    <script src="scripts/passgen.js"></script>
     
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="images/name.svg" height="80px" class="logo"></a>
+        <a href="#" class="logo"><img src="images/name.svg" height="30px" class="logo"></a>
         <nav>
             <div id="mySideNav" class="sideNav mobile">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
+                <a href="#">Home</a>
                 <a href="#">Services</a>
-                <a href="#">Clients</a>
+                <a href="#">About Me</a>
                 <a href="#">Contact</a>
             </div> <!-- end of "mySidenav" div -->
-            <div id="myNavBar" class="navBar desktop">
+            <div id="myNavBar" class="desktop navBar">
                 <ul>
-                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Home</li></a>
                     <a href="#"><li>Services</li></a>
-                    <a href="#"><li>Clients</li></a>
+                    <a href="#"><li>About Me</li></a>
                     <a href="#"><li>Contact</li></a>
                 </ul>
             </div>
         </nav>
-        <img src="images/burger.svg" onclick="openNav()" class="menuBtn mobile">
+        <img src="images/burger.svg" onclick="openNav()" class="menuBtn mobile" height="30px">
     </header>
     
     <main>
-        <p>This is the main</p>
+        <img src="images/PixelFace.png" class="pixelPortrait">&nbsp;
+        <p>Hello, Welcome to my personal website.</p>&nbsp;
+        <p>I am currently in my first year of the "Computer Programmer" program at Lambton College. This website is very much a work in progress and it will be updated as I get around to it.</p>&nbsp;
+        <p>In order to fill up this page, here is a password generator I wrote!</p>
+
+        <div id="passgen">
+            <label for="length"># of Characters: </label>
+            <input type="number" id="length" class="length" value="10" min="0"><br><br>
+            <label for="caps"># of Capitals: </label>
+            <input type="number" id="caps" class="caps" value="1" min="0"><br><br>
+            <label for="numbers"># of Numbers: </label>
+            <input type="number" id="numbers" class="numbers" value="1" min="0"><br><br>
+            <label for="symbols"># of Symbols </label>
+            <input type="number" id="symbols" class="symbols" value=1 min="0"><br><br>
+            <button id="calculate">Make My Password!</button>
+            <p id="error">Your password will appear here</p>
+        </div>
     </main>
 
     

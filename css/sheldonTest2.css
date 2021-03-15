@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #eff0f1;
+    background-color: #2e3445;
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 header {
     position: sticky;
     top: 0px;
-    background-color: #1998da;
+    background-color: #525e65;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -44,9 +44,9 @@ header {
 }
 
 .navBar li {
-    font-size: 25px;
+    font-size: 20px;
     list-style: none;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 13px 0px 13px;
     margin: 0px;
 }
 
@@ -59,7 +59,7 @@ header {
 
 .navBar a, li:hover {
     text-decoration: none;
-    color: black;
+    color: #AD343E;
     transition: 0.5s;
 }
 

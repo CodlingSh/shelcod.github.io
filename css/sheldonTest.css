@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #eff0f1;
+    background-color: #2e3445;
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -20,11 +20,11 @@ body {
 header {
     position: sticky;
     top: 0px;
-    background-color: #1998da;
+    background-color: #525e65;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 5px 5px;
 }
 
 .logo {
@@ -33,9 +33,10 @@ header {
     margin-right: auto;
 }
 
-.navbar {
-    display: flex;
-    
+.navBar {
+    /*display: flex;*/
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .navBar ul {
@@ -44,9 +45,9 @@ header {
 }
 
 .navBar li {
-    font-size: 25px;
+    font-size: 20px;
     list-style: none;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 13px 0px 13px;
     margin: 0px;
 }
 
@@ -59,7 +60,7 @@ header {
 
 .navBar a, li:hover {
     text-decoration: none;
-    color: black;
+    color: #3daee9;
     transition: 0.5s;
 }
 
@@ -75,7 +76,7 @@ header {
     z-index: 1; /* Stay on top */
     top: 0; /* stay at the top */
     right: 0;
-    background-color: #1478ad;
+    background-color: #525e65;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 30px;
     transition: 0.3s; /* 0.5 second transition tffect to slide in the sideNav */
@@ -86,15 +87,10 @@ header {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
     text-align: center;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sideNav a:hover {
-    color: #f1f1f1;
 }
 
 /* Position and style the close button in the top right corner */
@@ -106,15 +102,39 @@ header {
     margin-left: 50px;
 }
 
+.pixelPortrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main {
     display: relative;
     width: 100%;
-    background-color: #fcfcfc;
-    padding: 10px;
+    padding: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+main p {
+    text-align: center;
+    color: #f1f1f1;
+    
+}
+
+#passgen {
+    padding-top: 40px;
+}
+
+#passgen label {
+    color: #f1f1f1;
+}
+
+#error {
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 830px) {
@@ -128,5 +148,12 @@ main {
 
     main {
         width: 80%;
+        border-radius: 50px;
+        background: #2e3445;
+        box-shadow:  20px 20px 60px #272c3b, -20px -20px 60px #353c4f;
+    }
+
+    header {
+        padding: 0px 10%;
     }
 }
