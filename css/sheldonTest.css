@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.mobile {
+    display: inline;
+}
+
+.desktop {
+    display: none;
+}
+
+header {
+    top: 0px;
+    background-color: #525e65;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navBar {
+    /*display: flex;*/
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navBar ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.navBar li {
+    font-size: 20px;
+    list-style: none;
+    padding: 0px 13px 0px 13px;
+    margin: 0px;
+}
+
+.navBar a, li {
+    text-decoration: none;
+    font-family: "Ubuntu mono", monospace;
+    color: #eeeeee;
+    border-radius: 15px;
+}
+
+.navBar a, li:hover {
+    text-decoration: none;
+    color: #3daee9;
+    transition: 0.5s;
+}
+
+.menuBtn {
+    cursor: pointer;
+}
+
+/* The side navigation menu */
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* stay at the top */
+    right: 0;
+    background-color: #525e65;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px;
+    transition: 0.3s; /* 0.5 second transition tffect to slide in the sideNav */
+}
+
+/* The navigation menu links */
+.sideNav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Position and style the close button in the top right corner */
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.pixelPortrait {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: relative;
+    width: 100%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+main p {
+    text-align: left;
+    color: #000000;
+    
+}
+
+footer {
+    background: #525e65;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+ }
+
+.pixelPortrait {
+    width: 216px;
+    top: 67px;
+    border: solid black 2px;
+    z-index: 1;
+}
+
+.ribbons {
+    position: relative;
+    height: 216px;
+    z-index: 2;
+}
+
+.logo {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #3daee9;
+    transition: 0.5s;
+}
+
+/* Stuff for the hexagon image */
+.hexagon {
+    position: relative;
+    width: 200px; 
+    height: 115.47px;
+    margin: 57.74px 0;
+    background-image: url(../images/Portrait.jpg);
+    background-size: auto 224.0119px;
+    background-position: center;
+    border-left: solid 3px #525e65;
+    border-right: solid 3px #525e65;
+  }
+  
+  .hexTop,
+  .hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 141.42px;
+    height: 141.42px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 26.29px;
+  }
+  
+  /*counter transform the bg image on the caps*/
+  .hexTop:after,
+  .hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 194.0000px;
+    height: 112.00595222278741px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-56.0030px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-56.0030px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-56.0030px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+  }
+  
+  .hexTop {
+    top: -70.7107px;
+    border-top: solid 4.2426px #525e65;
+    border-right: solid 4.2426px #525e65;
+  }
+  
+  .hexTop:after {
+    background-position: center top;
+  }
+  
+  .hexBottom {
+    bottom: -70.7107px;
+    border-bottom: solid 4.2426px #525e65;
+    border-left: solid 4.2426px #525e65;
+  }
+  
+  .hexBottom:after {
+    background-position: center bottom;
+  }
+  
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    top: 1.7321px;
+    left: 0;
+    width: 194.0000px;
+    height: 112.0060px;
+    z-index: 2;
+    background: inherit;
+  }
+
+@media only screen and (min-width: 830px) {
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: inline;
+    }
+
+    main {
+        width: 90%;
+        max-width: 1130px;
+    }
+
+    .page-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/header4.svg);
+        height: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .headbg {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        padding: 0px 10%;
+    }
+}
