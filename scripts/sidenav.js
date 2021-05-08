@@ -1,21 +1,15 @@
-// Set the width of the side navigation to 250px and the left margin of the page content to 250px
-/*function openNav() {
-    document.getElementById("mySideNav").style.width = "100%";
-}
-
-// Set the width of the side navigation to 0 and the left margin of the page content to 0
-function closeNav() {
-    document.getElementById("mySideNav").style.width = "0";
-}*/
-
-//Jquery test
-jQuery(document).ready(function() {
+// jQuery code to slide down and slide up the mobile navigation menu.
+// The name "sideNav" doesn't make much sense anymore, but I didn't want to go and replace all the instances of the class name.
+$(document).ready(function() {
     
-    jQuery(".menuBtn").click(function() {
-        jQuery("#mySideNav").toggleClass("hide");
-    });
-
-    jQuery(".pixelPortrait").click(function() {
-        
+    $(".menuBtn").click(function() {
+        if ($("#mySideNav").css("display") == "flex") {
+            $(".sideNav").slideUp(200, "swing");
+        }
+        else {
+            
+            $(".sideNav").slideDown(200, "swing");
+            $(".sideNav").css("display", "flex");
+        }
     });
 });
