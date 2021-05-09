@@ -1,6 +1,4 @@
-"use strict"
-var $ = function(id) { return document.getElementById(id); };
-
+/*"use strict"
 var scramble = function(word) {
     var j, x, i;
     for (i = word.length - 1; i > 0; i--) {
@@ -62,4 +60,66 @@ var calculate = function() {
 
 window.onload = function() {
     $("calculate").onclick = calculate;
-};
+};*/
+
+/* jQuery version */
+
+
+$(document).ready(function() {
+    var letList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    var symList = ['{', '}', '(', ')', '[', ']', '#', ';', ':', '^', ',', '.', '?', '!', '&', '_', '@', '$', '%', '/', '\\', '+', '=', '-', '*'] ;
+
+    function getRandomInt(n) {
+        return Math.floor(Math.random() * n);
+    }
+    function shuffle(s) {
+      var arr = s.split('');           // Convert String to array
+      var n = arr.length;              // Length of the array
+      
+      for(var i=0 ; i<n-1 ; ++i) {
+        var j = getRandomInt(n);       // Get random of [0, n-1]
+        
+        var temp = arr[i];             // Swap arr[i] and arr[j]
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+      
+      s = arr.join('');                // Convert Array to string
+      return s;                        // Return shuffled string
+    }
+
+    $("#calculate").click(function() {
+        // Variables
+        let length = $("#length").val();
+        let caps = $("#caps").val();
+        let numbers = $("#numbers").val();
+        let symbols = $("#symbols").val();
+        let password = "";
+
+        // generate the lowercase characters
+        for (var i = 0; i < (length - caps - numbers - symbols); i++) {
+            password += letList[Math.floor(Math.random() * letList.length)];
+        }
+
+        // generate the uppercase characters
+        for (i = 0; i < caps; i++) {
+            password += letList[Math.floor(Math.random() * letList.length)].toUpperCase();
+        }
+
+        // generate the numbers
+        for (i = 0; i < numbers; i++) {
+            password += Math.floor(Math.random() * 10);
+        }
+
+        // generate the symbols
+        for (i = 0; i < symbols; i++) {
+            password += symList[Math.floor(Math.random() * symList.length)];
+        }
+
+        // shuffle the string
+        password = shuffle(password);
+
+        $("#passBox > p").text(password);
+
+    })
+})
