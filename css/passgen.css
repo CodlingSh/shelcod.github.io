@@ -1,0 +1,44 @@
+#calculate {
+    display: block;
+    margin: 0 auto;
+}
+
+#option {
+    margin-bottom: 15px;
+}
+
+#option label {
+    position: absolute;
+    left: 15%;
+}
+
+#option input {
+    position: absolute;
+    right: 15%;
+    padding: 5px;
+    width: 60px;
+}
+
+main p:first-of-type {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+#passBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: #ffffff;
+    width: 90%;
+    height: 60px;
+}
+
+#passBox p {
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 830px) {
+
+}
