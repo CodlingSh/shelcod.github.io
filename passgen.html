@@ -4,55 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passgen</title>
+    <title>Sheldon Codling's Webpage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/sheldontest.css">
+    <link rel="stylesheet" href="css/sheldonTest.css">
+    <link rel="stylesheet" href="css/passgen.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="scripts/sidenav.js"></script>
     <script src="scripts/passgen.js"></script>
-    
+
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="images/name.svg" height="30px" class="logo"></a>
-        <nav>
-            <div id="mySideNav" class="sideNav mobile">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div> <!-- end of "mySidenav" div -->
-            <div id="myNavBar" class="navBar desktop">
+        <!--<a href="#" class="logo"><img src="images/name.svg" height="30px" class="logo"></a>-->
+        <h1 class="logo">Sheldon Codling</h1>
+        <nav>        
+            <img src="images/burger.svg" class="menuBtn mobile" height="30px">
+            <div id="myNavBar" class="desktop navBar">
                 <ul>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Services</li></a>
-                    <a href="#"><li>Clients</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="project.html"><li>Projects</li></a>
+                    <a href="about.html"><li>About Me</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
                 </ul>
             </div>
         </nav>
-        <img src="images/burger.svg" onclick="openNav()" height="30px"; class="menuBtn mobile">
     </header>
-    
+    <div id="mySideNav" class="sideNav mobile">
+        <a href="index.html">Home</a><hr>
+        <a href="projects.html">Projects</a><hr>
+        <a href="about.html">About Me</a><hr>
+        <a href="contact.html">Contact</a>
+    </div> <!-- end of "mySidenav" div -->
+
+    <div class="page-top">
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+        </div>
+    </div>
+
     <main>
-        <label for="length">Length: </label>
-        <input type="number" id="length" class="length" value="10" min="0"><br><br>
-        <label for="caps"># of Capitals: </label>
-        <input type="number" id="caps" class="caps" value="1" min="0"><br><br>
-        <label for="numbers"># of Numbers: </label>
-        <input type="number" id="numbers" class="numbers" value="1" min="0"><br><br>
-        <label for="symbols"># of Symbols </label>
-        <input type="number" id="symbols" class="symbols" value=1 min="0"><br><br>
+        <div id="option">
+            <label for="length">Character Length: </label>
+            <input type="number" id="length" class="length" value="10" min="0"><br><br>
+        </div>
+        <div id="option">
+            <label for="caps"># of Capitals: </label>
+            <input type="number" id="caps" class="caps" value="1" min="0"><br><br>
+        </div>
+        <div id="option">
+            <label for="numbers"># of Numbers: </label>
+            <input type="number" id="numbers" class="numbers" value="1" min="0"><br><br>
+        </div>
+        <div id="option">
+            <label for="symbols"># of Symbols: </label>
+            <input type="number" id="symbols" class="symbols" value=1 min="0"><br><br>
+        </div>
         <button id="calculate">Make My Password!</button>
-        <p id="error"></p>
+        <p>Your password will appear in the box below.</p>
+        <div id="passBox"><p></p></div>
     </main>
 
-    
-
-    <div id="main">
-
-    </div> <!-- end of "openNav" div -->
+    <footer>
+        <p>Website by Sheldon Codling</p>
+        <p>©2020 - 2021</p>
+    </footer>
 </body>
 </html>
