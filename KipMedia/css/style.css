@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: inline;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 3% 0 3%;
+    height: 100px;
+    background: #f4f4f4;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    max-height: 95%;
+    margin-right: auto;
+}
+
+.sidenav {
+    display: none;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 7px 0 7px;
+    font-weight: bold;
+    
+}
+
+.sidenav li {
+    list-style: none;
+    text-align: center;
+}
+
+#sect1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/backgrounds/hannes-wolf-CDV__m66sTc-unsplash.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+#sect1Text {
+    text-align: center;
+    font-size: 34px;
+    color: white;
+    padding: 0 3% 0 3%;
+}
+
+#sect2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sect2Text {
+    text-align: center;
+    padding: 0 3% 0 3%;
+}
+
+/* Anything below here will appear on a desktop */
+@media only screen and (min-width: 830px) {
+    
+    .desktop {
+        display: inline;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        margin: 0 7px 0 7px;
+        font-weight: bold;
+    }
+    
+    .navbar li {
+        display: inline;
+        list-style: none;
+    }
+
+    header {
+        padding: 0 17% 0 17%;
+    }
+
+    #sect1Text {
+        text-align: center;
+        font-size: 34px;
+        color: white;
+        padding: 0 17% 0 17%;
+    }
+    
+    #sect2Text {
+        text-align: center;
+        padding: 0 17% 0 17%;
+    } 
+}
+
