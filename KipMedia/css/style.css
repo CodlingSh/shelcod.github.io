@@ -52,14 +52,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/backgrounds/hannes-wolf-CDV__m66sTc-unsplash.jpg");
+    background-image: url("../images/backgrounds/pexels-anthony-157540.jpg");
     height: 500px;
     background-size: cover;
 }
 
 #sect1Text {
     text-align: center;
-    font-size: 34px;
+    font-size: 80px;
     color: white;
     padding: 0 3% 0 3%;
 }
@@ -104,9 +104,10 @@ header {
 
     #sect1Text {
         text-align: center;
-        font-size: 34px;
+        font-size: 80px;
         color: white;
         padding: 0 17% 0 17%;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     
     #sect2Text {
