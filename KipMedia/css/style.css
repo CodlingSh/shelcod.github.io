@@ -4,6 +4,12 @@
     padding: 0px;
 }
 
+body {
+    background-color: #E4DCC9;
+    position: relative;
+    min-height: 100vh;
+}
+
 .desktop {
     display: none;
 }
@@ -12,18 +18,27 @@
     display: inline;
 }
 
-body {
-    background-color: #ffffff;
-}
-
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 3% 0 3%;
     height: 100px;
-    background: #f4f4f4;
-    border-bottom: 2px solid black;
+    background: #FFFAF4;
+    border-bottom: 2px solid #BBA79C;
+}
+
+main {
+    min-height: calc(100vh - 156px);
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    background-color: #FAF8E9;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
 }
 
 .logo {
@@ -40,7 +55,6 @@ header {
     color: black;
     margin: 0 7px 0 7px;
     font-weight: bold;
-    
 }
 
 .sidenav li {
@@ -86,16 +100,52 @@ header {
         display: none;
     }
 
+    .navbar {
+        display: flex;
+        align-self: flex-end;
+        height: 100%;
+    }
+
     .navbar a {
         text-decoration: none;
         color: black;
         margin: 0 7px 0 7px;
-        font-weight: bold;
+    }
+
+    .navbar > ul {
+        /*display: flex;*/
+        align-self: flex-end;
     }
     
     .navbar li {
         display: inline;
         list-style: none;
+        color: black;
+        margin: 0 7px 0 7px;
+        font-weight: bold;
+    }
+
+    .menu {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0%;
+        background-color: #FFFAF4;
+        border: 2px solid #BBA79C;
+        border-top: 0px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .dropdown li {
+        text-align: center;
+        display: block;
+        padding: 10px 0 10px 0;
     }
 
     header {
