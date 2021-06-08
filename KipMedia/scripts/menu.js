@@ -1,27 +1,37 @@
 $(document).ready(function() {
- // Script for the desktop menu
+    // Script for the desktop menu
     $('.menu').click(function() {
         
-        if ($('.dropdown').css("display") == "block") {
+        if ($('.dropdown').css("display") == "flex") {
             $(".dropdown").slideUp(200, "swing");
             $(".arrow").css("transform", "rotate(0deg)");
         }
         else {
             $(".dropdown").slideDown(200, "swing");
-            $(".dropdown").css("display", "block");
+            $(".dropdown").css("display", "flex");
             $(".arrow").css("transform", "rotate(180deg)");
         }
     })
 
-// Script for the mobile menu
-    $('.burger').click(function() {
-        console.log($('.sidenav').css("width"))
-        if ($('.sidenav').css("width") == "100%") {
-            $('.sidenav').animate({width: "0%"})
+    // Script for the mobile menu
+    $(".burger").click(function() {
+        $(".sidenav").toggleClass("on")
 
-        }
-        else if ($('.sidenav').css("width") == "0%") {
-            $('.sidenav').animate({width: "100%"})
+        if ($(".sidenav").hasClass("on")) {
+            $(".sidenav").animate({width: "100%"}, 200)
+        } else {
+            $(".sidenav").animate({width: "0%"}, 200)
         }
     })
-})
+
+    // Controls for the mobile submenu
+    $(".menuM").click(function() {
+        if ($('.dropdownM').css("display") == "block") {
+            $(".dropdownM").slideUp(200, "swing");
+        }
+        else {
+            $(".dropdownM").slideDown(200, "swing");
+            $(".dropdownM").css("display", "block");
+        }
+    })
+});
