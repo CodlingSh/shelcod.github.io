@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaType.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="scripts/menu.js"></script>
     <title>Kip's Media Transfers - Home</title>
@@ -63,15 +63,31 @@
     </div>
 
     <main>
-        <div class="mainArea">
-            <img src="images/temp.png">
-            <div class="mainText">
-                <p>Text about the media will go here</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h2>Price: $20 per tape</h2>
-            </div>
-        </div>
-
+        <h1 class="centered">Have a question, concern, or compliment? Please fill out the form below to let us know.</h1>
+        
+        <form>
+            <div class="flex">
+                <div class="nameBox">
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" name="fName" class="field-divided" placeholder="First" /> 
+                    <input type="text" name="lName" class="field-divided" placeholder="Last" />
+                </div>
+                <div class="emailBox">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="email" name="email" class="field-long" placeholder="example@example.com"/>
+                </div>
+                <div class="phoneBox">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" class="field-long" placeholder="(999) 999-9999"/>
+                </div>
+                <div class="messageBox">
+                    <label>Your Message <span class="required">*</span></label>
+                    <textarea name="messageBox" id="messageBox" class="field-long field-textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                </div>
+                
+                    <input type="submit" value="Submit" class="submitBtn"/>    
+                </div>
+            </form>
     </main>
 
     <footer>

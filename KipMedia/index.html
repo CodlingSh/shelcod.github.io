@@ -5,53 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/menu.js"></script>
     <title>Kip's Media Transfers - Home</title>
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" class="logo">
+        <img src="images/KoolKatLogo.svg" class="logo">
         <img src="images/burger.svg" class="burger mobile">
         <div class="navbar desktop">
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#">SHOP</a></li>
                 <li class="menu">
                     WHAT WE TRANSFER <img src="images/line.svg" class="arrow">
-                        <ul class="dropdown">
-                            <li><a href="#">FILM REELS</a></li>
-                            <li><a href="#">VIDEO TAPES</a></li>
-                            <li><a href="#">VIYNL RECORDS</a></li>
-                            <li><a href="#">AUDIO TAPES</a></li>
-                            <li><a href="#">PHOTOGRAPHS</a></li>
-                        </ul>
                 </li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
     </header>
 
+    <div class="dropdown desktop">
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>8 MM FILMS</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>SUPER 8 FILMS</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>BETA VIDEOS</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>VHS VIDEOS</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>VIYNL RECORDS</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>REEL TO REEL TAPES</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>8-TRACK TAPES</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>CASSETTE TAPES</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>IMAGES</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>PRESENTATIONS</p></div></a>
+        <a href="template.html"><div class="box"><img src="images/temp.png" ><p>MEMORIALS</p></div></a>
+    </div> <!-- End of ".dropdown" div -->
+
     <div class="sidenav mobile">
         <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="#">SHOP</a></li>
-            <li><a href="#">WHAT WE TRANSFER</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li class="menuM"><a href="#">WHAT WE TRANSFER</a></li>
+                <ul class="dropdownM">
+                    <li><a href="template.html">8 MM FILM</a></li>
+                    <li><a href="template.html">SUPER 8 FILM</a></li>
+                    <li><a href="template.html">BETA VIDEO</a></li>
+                    <li><a href="template.html">VHS VIDEO</a></li>
+                    <li><a href="template.html">VIYNL RECORDS</a></li>
+                    <li><a href="template.html">REEL TO REEL TAPE</a></li>
+                    <li><a href="template.html">8-TRACK TAPE</a></li>
+                    <li><a href="template.html">CASSETTE TAPE</a></li>
+                    <li><a href="template.html">IMAGES</a></li>
+                    <li><a href="template.html">PRESENTATIONS</a></li>
+                    <li><a href="template.html">MEMORIALS</a></li>
+                </ul>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </div>
 
     <main>
         <div id="sect1">
             <div id="sect1Text">
-                <p>Restoring your memories<br> One video at a time!</p>
-                <!--<p>Utilizing state of the art photo, video, and audio capture techniques, Kip's Media Transfers can ensure your heirloom keepsakes are preserved for generations to come!</p>-->
-            </div>
+                <p>Transfering your memories<br> One video at a time!</p>
+            </div> <!-- End of sect1Text div -->
         </div> <!-- End of sect1 div -->
 
         <div id="sect2">
             <div id="sect2Text">
-                <p style="font-size: 34px;"><br>Utilizing state of the art photo, video, and audio capture techniques, Kip's Media Transfers can ensure your heirloom keepsakes are preserved for generations to come!</p>
-                <p><br>Allow us to take your box of any brand of tapes, photos, film reels and audio and convert them into masterpieces for generations to come. Each piece will be hand-digitized in our state-of-the-art facility, and conveniently converted to digital, DVD, or the cloud.</p>
-            </div> <!-- End of sect1 div -->
+                <p style="font-size: 34px;"><br>Utilizing the latest photo, video, and audio capture techniques, Kip Cuthbert's Media Transfers can ensure your family videos are preserved for future generations to enjoy!</p>
+                <p><br>Allow us to take your tapes, photos, film reels and audio tapes and convert them into masterpieces for generations to come. Each piece will be digitized in our state-of-the-art facility, and conveniently converted to a digital format or a DVD.</p>
+            </div> <!-- End of sect2Text div -->
         </div> <!-- End of sect2 div -->
     </main>
 
@@ -60,8 +81,5 @@
         
         <p>Web Design by <a href="http://www.sheldonc.ca">Sheldon Codling</a></p>
     </footer>
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="scripts/menu.js"></script>
 </body>
 </html>
