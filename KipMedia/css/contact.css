@@ -1,0 +1,34 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.required {
+    color: red;
+}
+
+form label {
+    font-size: 34px;
+    display: block;
+}
+
+.submitBtn {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+
+
+

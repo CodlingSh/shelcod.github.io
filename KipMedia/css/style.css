@@ -8,6 +8,7 @@ body {
     background-color: #E4DCC9;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .desktop {
@@ -22,14 +23,15 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 3% 0 3%;
-    height: 100px;
-    background: #FAF8E9;
-    border-bottom: 2px solid #BBA79C;
+    padding: 0 2% 0 2%;
+    height: 15vw;
+    max-height: 100px;
+    background-color: #FAF8E9;
+    border-bottom: 1px solid #939881;
 }
 
 main {
-    min-height: calc(100vh - 156px);
+    min-height: calc(100vh - 156px);    
 }
 
 footer {
@@ -43,30 +45,48 @@ footer {
 
 .logo {
     max-height: 95%;
+    /*width: 75%;
+    max-width: 483.6px;*/
     margin-right: auto;
 }
 
 .sidenav {
-    display: block;
-    position: fixed;
-    width: 0%;
-    height: 100%;
-    left: auto;
+    height: calc(100% - 100px);
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
     background-color: #FAF8E9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
 }
-
+  
 .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    display: block;
-    color: black;
-    margin: 0 7px 0 7px;
-    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+    display: block;  
 }
 
-.sidenav li {
-    list-style: none;
+.dropdown {
+    display: none;
     text-align: center;
-    font-size: xx-large;
+}
+
+.dropdownM {
+    display: none;
+    text-align: center;
+}
+
+.burger {
+    max-height: 80%;
+}
+.centered {
+    text-align: center;
 }
 
 #sect1 {
@@ -139,14 +159,18 @@ footer {
 
     .dropdown {
         display: none;
+        justify-content: center;
+        flex-wrap: wrap;
         position: absolute;
         width: 100%;
-        top: 100%;
+        top: 100px;
         left: 0%;
-        background-color: #FFFAF4;
-        border: 2px solid #BBA79C;
+        padding: 0 9% 0 9%;
+        background-color: #FAF8E9;
+        border: 1px solid #939881;
         border-top: 0px;
-        border-radius: 0 0 5px 5px;
+
+        z-index: 1;
     }
 
     .dropdown li {
@@ -155,21 +179,42 @@ footer {
         padding: 10px 0 10px 0;
     }
 
+    .box {
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+
+    .box p {
+        text-align: center;
+    }
+
+    /*.on {
+        display: flex;
+        justify-content
+    }*/
+
     header {
-        padding: 0 17% 0 17%;
+        padding: 0 9% 0 9%;
+    }
+
+    #sect2 {
+        margin: 0 9% 0 9%;
     }
 
     #sect1Text {
         text-align: center;
         font-size: 80px;
         color: white;
-        padding: 0 17% 0 17%;
+        
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     
     #sect2Text {
         text-align: center;
-        padding: 0 17% 0 17%;
+        padding: 0 9% 0 9%;
     } 
 }
 

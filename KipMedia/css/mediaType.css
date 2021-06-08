@@ -1,0 +1,22 @@
+.mainArea {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    width: 90%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.mainArea img {
+    width: 350px;
+    height: 350px;
+}
+
+.mainText {
+    width: 75%;
+    min-width: 370px;
+}
+
+.mainText p {
+    padding-bottom: 10px;
+}
