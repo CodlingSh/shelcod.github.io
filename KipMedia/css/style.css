@@ -24,8 +24,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 0 2% 0 2%;
-    height: 15vw;
-    max-height: 100px;
+    height: 12vw;
     background-color: #FAF8E9;
     border-bottom: 1px solid #939881;
 }
@@ -44,10 +43,7 @@ footer {
 }
 
 .logo {
-    max-height: 95%;
-    /*width: 75%;
-    max-width: 483.6px;*/
-    margin-right: auto;
+    width: 70%;
 }
 
 .sidenav {
@@ -128,19 +124,18 @@ footer {
     }
 
     .navbar {
-        display: flex;
-        align-self: flex-end;
+        display: block;
         height: 100%;
+	text-align: center;
     }
 
     .navbar a {
         text-decoration: none;
         color: black;
-        margin: 0 7px 0 7px;
     }
 
     .navbar > ul {
-        /*display: flex;*/
+        font-size: 34px;
         align-self: flex-end;
     }
     
@@ -157,23 +152,20 @@ footer {
         cursor: pointer;
     }
 
-    .dropdown {
-        display: none;
+    .convertCont {
+        display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        position: absolute;
         width: 100%;
-        top: 100px;
+        top: 170px;
         left: 0%;
         padding: 0 9% 0 9%;
         background-color: #FAF8E9;
-        border: 1px solid #939881;
         border-top: 0px;
-
-        z-index: 1;
+        z-index: 0;
     }
 
-    .dropdown li {
+    .convertCont li {
         text-align: center;
         display: block;
         padding: 10px 0 10px 0;
@@ -191,13 +183,21 @@ footer {
         text-align: center;
     }
 
-    /*.on {
-        display: flex;
-        justify-content
-    }*/
+    .logo {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+    }
+
+    .convertCont {
+	
+    }
 
     header {
-        padding: 0 9% 0 9%;
+	display: flex;
+	flex-direction: column;
+	height: initial;
+	padding: 10px 0 10px 0;
     }
 
     #sect2 {
@@ -207,8 +207,7 @@ footer {
     #sect1Text {
         text-align: center;
         font-size: 80px;
-        color: white;
-        
+        color: white; 
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     
