@@ -17,18 +17,21 @@ body {
     display: none;
 }
 
-header {
-    top: 0px;
-    background-color: #525e65;
+.topPart {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    width: 100vw;
+    padding: 0 15px;
 }
 
-hr {
-    width: 80%;
-    margin: 0 auto;
+header {
+    top: 0px;
+    background-color: #394246;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
 }
 
 .logo {
@@ -44,12 +47,13 @@ hr {
 /* The side navigation menu */
 
 .sideNav {
-    background-color: #525e65;
+    background-color: #394246;
     position: absolute;
     text-align: center;
     top: 42px;
     width: 100%;
     /*height: 100%;*/ /* Uncomment this to make the side nav full screen */
+    border-bottom: solid 1px black;
     border-radius: 0px 0px 15px 15px;
     display: none;
     flex-direction: column;
@@ -85,11 +89,11 @@ main {
 main p {
     text-align: left;
     color: #000000;
-    
+    margin-bottom: 30px;
 }
 
 footer {
-    background: #525e65;
+    background: #394246;
     text-align: center;
     bottom:0;
     width:100%;
@@ -121,38 +125,40 @@ footer {
 /* Stuff for the hexagon image */
 .hexagon {
     position: relative;
-    width: 200px; 
-    height: 115.47px;
-    margin: 57.74px 0;
+    width: 235px; 
+    height: 135.68px;
+    margin: 67.84px 0;
     background-image: url(../images/Portrait.jpg);
-    background-size: auto 224.0119px;
+    background-size: auto 259.8076px;
     background-position: center;
-    border-left: solid 3px #525e65;
-    border-right: solid 3px #525e65;
+    border-left: solid 5px #394246;
+    border-right: solid 5px #394246;
   }
   
-  .hexTop, .hexBottom {
+  .hexTop,
+  .hexBottom {
     position: absolute;
     z-index: 1;
-    width: 141.42px;
-    height: 141.42px;
+    width: 166.17px;
+    height: 166.17px;
     overflow: hidden;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
     -ms-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background: inherit;
-    left: 26.29px;
+    left: 29.41px;
   }
   
   /*counter transform the bg image on the caps*/
-  .hexTop:after, .hexBottom:after {
+  .hexTop:after,
+  .hexBottom:after {
     content: "";
     position: absolute;
-    width: 194.0000px;
-    height: 112.00595222278741px;
-    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-56.0030px);
-    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-56.0030px);
-    transform:          rotate(45deg) scaleY(1.7321) translateY(-56.0030px);
+    width: 225.0000px;
+    height: 129.9038105676658px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-64.9519px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-64.9519px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-64.9519px);
     -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     transform-origin: 0 0;
@@ -160,9 +166,9 @@ footer {
   }
   
   .hexTop {
-    top: -70.7107px;
-    border-top: solid 4.2426px #525e65;
-    border-right: solid 4.2426px #525e65;
+    top: -83.0850px;
+    border-top: solid 7.0711px #394246;
+    border-right: solid 7.0711px #394246;
   }
   
   .hexTop:after {
@@ -170,9 +176,9 @@ footer {
   }
   
   .hexBottom {
-    bottom: -70.7107px;
-    border-bottom: solid 4.2426px #525e65;
-    border-left: solid 4.2426px #525e65;
+    bottom: -83.0850px;
+    border-bottom: solid 7.0711px #394246;
+    border-left: solid 7.0711px #394246;
   }
   
   .hexBottom:after {
@@ -182,10 +188,10 @@ footer {
   .hexagon:after {
     content: "";
     position: absolute;
-    top: 1.7321px;
+    top: 2.8868px;
     left: 0;
-    width: 194.0000px;
-    height: 112.0060px;
+    width: 225.0000px;
+    height: 129.9038px;
     z-index: 2;
     background: inherit;
   }
@@ -201,10 +207,10 @@ footer {
     justify-content: center;
     align-items: center;
     background-image: url(../images/header4.svg);
-    height: 237px;
+    height: 300px;
     margin: 0 auto;
     overflow: hidden;
-}
+    }
 
 @media only screen and (min-width: 830px) {
     .mobile {
@@ -215,47 +221,133 @@ footer {
         display: inline;
     }
 
+    .topPart {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 0px;
+        max-width: 1100px;
+    }
+
     main {
         width: 90%;
         max-width: 1130px;
     }
 
     header {
-        padding: 0px 10%;
-      }
+        height: 62px;
+        padding: 0px 0%;
+    }
     
     .page-top {
         height: 350px;
     } 
 
     /* Navigation Bar */
-    .navBar {
-       margin-left: 20%;
-       margin-right: 20%;
+    nav {
+        width: 400px;
     }
     
     .navBar ul {
         display: flex;
+        height: 100%;
+        justify-content: space-between;
         text-decoration: none;
     }
     
     .navBar li {
         font-size: 20px;
         list-style: none;
-        padding: 0px 13px 0px 13px;
         margin: 0px;
     }
     
-    .navBar a, li {
+    .navBar a {
         text-decoration: none;
-        font-family: "Ubuntu mono", monospace;
         color: #eeeeee;
+        padding: 5px 10px;
+        border-radius: 35px;
+
         /*border-radius: 15px;*/
     }
-    
-    .navBar a, li:hover {
+
+    .navBar a:hover {
         text-decoration: none;
-        color: #3daee9;
-        transition: 0.5s;
+        background-color: #3daee9;
+        color: #000000;
+        /*transition: background-color 0.5s;*/
     }
+
+    /* Hexagon stuff for desktop below */
+    .hexagon {
+        position: relative;
+        width: 285px; 
+        height: 164.54px;
+        margin: 82.27px 0;
+        background-image: url(../images/Portrait.jpg);
+        background-size: auto 317.5426px;
+        background-position: center;
+        border-left: solid 5px #394246;
+        border-right: solid 5px #394246;
+      }
+      
+      .hexTop,
+      .hexBottom {
+        position: absolute;
+        z-index: 1;
+        width: 201.53px;
+        height: 201.53px;
+        overflow: hidden;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background: inherit;
+        left: 36.74px;
+      }
+      
+      /*counter transform the bg image on the caps*/
+      .hexTop:after,
+      .hexBottom:after {
+        content: "";
+        position: absolute;
+        width: 275.0000px;
+        height: 158.7713240271471px;
+        -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-79.3857px);
+        -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-79.3857px);
+        transform:          rotate(45deg) scaleY(1.7321) translateY(-79.3857px);
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        background: inherit;
+      }
+      
+      .hexTop {
+        top: -100.7627px;
+        border-top: solid 7.0711px #394246;
+        border-right: solid 7.0711px #394246;
+      }
+      
+      .hexTop:after {
+        background-position: center top;
+      }
+      
+      .hexBottom {
+        bottom: -100.7627px;
+        border-bottom: solid 7.0711px #394246;
+        border-left: solid 7.0711px #394246;
+      }
+      
+      .hexBottom:after {
+        background-position: center bottom;
+      }
+      
+      .hexagon:after {
+        content: "";
+        position: absolute;
+        top: 2.8868px;
+        left: 0;
+        width: 275.0000px;
+        height: 158.7713px;
+        z-index: 2;
+        background: inherit;
+      }
 }
